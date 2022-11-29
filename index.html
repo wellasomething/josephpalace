@@ -11,7 +11,7 @@
 <body>
     <div class="container-fluid">
         <nav class = "navigate text-end">
-            <img src="jlogo.png" alt="joseph palace logo" class="jlogo img-fluid" >
+            <img src="jlogo.png" alt="joseph palace logo" class="jlogo img-fluid" id="jlogo">
 
             <div class="dropdown">
                 <a href="">MEMBER</a>
@@ -65,9 +65,16 @@
 
             <a href="">Contact Us</a>
         </nav>
+        
        
         <div class="contain">
             <img src="unwind.jpeg" alt="" width="100%">
+        </div>
+
+        <div class="container-fluid p-5 my-5 text-center bg-light">
+            <h2 class="text-primary">Need a Prayer?</h2>
+            <p>Sometimes life becomes too much to handle, leaving us with nothing but questions. Hope may seem far away in those circumstances. Our attitude toward the One who is waiting to hear us changes as a result of prayer, which is a wonderful thing. Whatever you’re dealing with, we would love to pray for you!</p>
+            <button class="btn btn-primary btn-lg">Ask for Prayer</button>
         </div>
 
         <div class="wrap">
@@ -88,10 +95,14 @@
             <div class="wrap-content ">
                 <h2>Get Free Church Resources</h2>
                 <div class="container bg-mute se p-3">
-                    <form action="post">
-                        <input type="text" placeholder="Firstname" class="form-control form-control-lg" ><br>
-                        <input type="email" placeholder="Email" class="form-control" required><br>
+                    <form action="#" method="post" name="myForm" >
+                        <div class="row">
+                            <div class="col"><input type="text" placeholder="Firstname" class="form-control form-control-lg " id="firstname"><br></div>
+                        
+                            <div class="col"><input type="email" placeholder="Email" class="form-control form-control-lg" id="email" required><br></div>
+                        </div>
                         <button class="btn btn-danger btn-lg">Subscribe Now</button><br>
+                        
                     </form>
                     We respect your privacy
                 
@@ -101,7 +112,7 @@
             
         </div>
 
-        <footer class="p-3">Joseph Palace Copyright @2022</footer>
+        <footer class="p-5">Joseph Palace Copyright @2022</footer>
     </div>
     <script src ="jp.js"></script>
 </body>
