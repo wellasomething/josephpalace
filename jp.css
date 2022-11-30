@@ -1,9 +1,9 @@
 body{
     display: flex;
 }
-.container-fluid{
+.cont{
     margin: 0 20px;
-    background-color: #dedede;
+    background-color: #fffcfc;
 }
 nav {
     
@@ -13,7 +13,7 @@ nav {
     top:0;
     text-align: left;
     background-color: white;
-    
+    z-index: 1;
     
     padding: 0;
   
@@ -38,13 +38,28 @@ nav a:hover{
 }
 
 .jlogo{
-  background-size: contain;
+ 
   border-radius: 20px;
   float: left;
   cursor:pointer;
 
  
 }
+label #btn,
+label #cancel{
+  color:black;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display:none;
+}
+
+#check{
+  display:none;
+}
+
 .dropdown{
     position:relative;
     display: inline-block;
@@ -84,9 +99,9 @@ nav a:hover{
   .wrap{
     background-color: black;
     display:flex;
-    margin:50px 10px;
+    margin:50px 0;
     justify-content: space-around;
-    border-radius: 10px;
+    border-radius: 5px;
     
 
   }
@@ -98,6 +113,39 @@ nav a:hover{
     color: white;
     
 
+  }
+
+  #unwind{
+    margin-top:125px;
+  }
+
+  i{
+   
+    margin:20px 5px;
+  }
+
+  i:hover{
+    color:blue;
+  }
+
+  .chat:hover{
+    color:rgb(248, 248, 14);
+  }
+
+  .chat{
+    color:rgb(0, 30, 255);
+    
+    position: fixed;
+    bottom:60px;
+    right:20px;
+  }
+
+  .insta:hover {
+    color:rgb(255, 109, 177)
+  }
+
+  .yout:hover {
+    color:red;
   }
   .se{
     background-color: #c2bfb38b;
@@ -121,21 +169,52 @@ nav a:hover{
     color: white;
     
   }
-
+  @media only screen and (max-width: 840px){
+    nav a{
+      margin: 10px;
+      font-size: 17px;
+      
+     
+  }
+  }
 @media only screen and (max-width: 760px){
+
+  nav{
     
-    .container{
-        margin:5px 20px;
+    width: 100%;
+   
+
+    
+   
+   
+  }
+
+nav a{
+   
+    display: none;
+   
+}
+label #btn{
+  display: block;
+}
+    
+    .wrap{
+      flex-direction: column;
+      width:100%;
+    }
+    .wrap-content{
+      text-align: center;
+      
     }
 
-    .pastor-container{
-        display: flex;
-        flex-direction: column;
-    }
+   .row{
+    display: flex;
+    flex-direction: column;
+   }
 
-    .pastr{
-        border-radius: 100px;
-        width: 200px;
-    }
+   #unwind{
+    width:100%;
+    
+   }
 }
 
