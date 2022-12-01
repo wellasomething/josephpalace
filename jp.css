@@ -22,7 +22,7 @@ nav {
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: rgb(123, 0, 123);
     margin: 0 20px;
     text-align: left;
     padding:10px 0;
@@ -196,6 +196,7 @@ nav a{
 }
 label #btn{
   display: block;
+  
 }
     
     .wrap{
@@ -215,6 +216,15 @@ label #btn{
    #unwind{
     width:100%;
     
+   }
+
+   p{
+    text-align: justify;
+   }
+
+   .chat{
+    bottom: 20px;
+    right: 10px;
    }
 }
 
