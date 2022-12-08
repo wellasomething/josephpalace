@@ -104,13 +104,13 @@
             <div class="wrap-content ">
                 <h2>Get Free Church Resources</h2>
                 <div class="container bg-mute se p-3">
-                    <form action="#" method="post" name="myForm" >
+                    <form action="subscribe.php" method="post" name="myForm" >
                         <div class="row">
-                            <div class="col"><input type="text" placeholder="Firstname" class="form-control form-control-lg " id="firstname"><br></div>
+                            <div class="col"><input type="text" placeholder="Firstname" class="form-control form-control-lg " id="firstname" name="firstname"><br></div>
                         
-                            <div class="col"><input type="email" placeholder="Email" class="form-control form-control-lg" id="email" required><br></div>
+                            <div class="col"><input type="email" placeholder="Email" class="form-control form-control-lg" id="email" name="email" required><br></div>
                         </div>
-                        <button class="btn btn-danger btn-lg">Subscribe Now</button><br>
+                        <button class="btn btn-danger btn-lg" name="submit" type="submit" value="submit">Subscribe Now</button><br>
                         
                     </form>
                     We respect your privacy
